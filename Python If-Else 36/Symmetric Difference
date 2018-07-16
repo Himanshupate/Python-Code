@@ -1,0 +1,11 @@
+M = int(input())
+X = list(map(int , input().split()))
+N = input()
+Y = list(map(int , input().split()))
+X = set(X)
+Y = set(Y)
+X = X.symmetric_difference(Y)
+X = list(X)
+X.sort()
+for _ in range(len(X)) :
+    print(X[_])
