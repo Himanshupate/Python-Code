@@ -1,0 +1,9 @@
+def capitalize(string):
+    string = string.split(' ')
+    output = []
+    for word in string:
+        if word:
+            output.append(word[0].upper() + word[1:].lower())
+        else:
+            output.append('')
+    return ' '.join(output)
