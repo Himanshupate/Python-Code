@@ -1,0 +1,7 @@
+A = set(map(int , input().split()))
+N = int(input())
+D = True
+for _ in range(N) :
+    B = set(map(int, input().split()))
+    D = D and A.issuperset(B)
+print(D)
