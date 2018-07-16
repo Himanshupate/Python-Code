@@ -1,0 +1,15 @@
+N , M = input().split()
+N = int(N)
+M = int(M)
+if 5 <= N <= 101 :
+    for a in range(N//2) :
+        b = str()
+        for _ in range(2*a +1) :
+            b = b + '.|.'
+        print(b.center( M , '-'))
+    print('WELCOME'.center( M , '-'))
+    for a in range(N//2, 0 , -1) :
+        b = str()
+        for _ in range(2*a - 1) :
+            b =b + '.|.'
+        print(b.center( M , '-'))
