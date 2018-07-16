@@ -1,0 +1,7 @@
+T = int(input())
+for _ in range(T) :
+    E = int(input())
+    A = set(map(int, input().split()))
+    e = int(input())
+    a = set(map(int, input().split())) 
+    print(A.issubset(a))
