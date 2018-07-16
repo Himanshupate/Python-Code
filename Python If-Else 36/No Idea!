@@ -1,0 +1,11 @@
+n,m = map(int , input().split() )
+arr =  map(int , input().split(' '))
+A = set(map(int , input().split(' ')))
+B = set(map(int , input().split(' ')))
+H = 0
+for j in arr :
+    if j in A :
+        H += 1 
+    if j in B :
+        H += -1
+print(H)
